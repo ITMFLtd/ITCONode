@@ -1394,14 +1394,14 @@ void rai_qt::wallet::change_rendering_ratio (rai::uint128_t const & rendering_ra
 std::string rai_qt::wallet::format_balance (rai::uint128_t const & balance) const
 {
 	auto balance_str = rai::amount (balance).format_balance (rendering_ratio, 0, false);
-	auto unit = std::string ("XRB");
+	auto unit = std::string ("itco");
 	if (rendering_ratio == rai::kxrb_ratio)
 	{
 		unit = std::string ("kxrb");
 	}
 	else if (rendering_ratio == rai::xrb_ratio)
 	{
-		unit = std::string ("xrb");
+		unit = std::string ("itco");
 	}
 	return balance_str + " " + unit;
 }
@@ -1684,7 +1684,7 @@ scale_label (new QLabel ("Scale:")),
 ratio_group (new QButtonGroup),
 mrai (new QRadioButton ("Mxrb")),
 krai (new QRadioButton ("kxrb")),
-rai (new QRadioButton ("xrb")),
+rai (new QRadioButton ("itco")),
 back (new QPushButton ("Back")),
 ledger_window (new QWidget),
 ledger_layout (new QVBoxLayout),

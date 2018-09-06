@@ -6,7 +6,7 @@
 #include <rai/node/working.hpp>
 
 rai_daemon::daemon_config::daemon_config (boost::filesystem::path const & application_path_a) :
-rpc_enable (false),
+rpc_enable (true),
 opencl_enable (false)
 {
 }

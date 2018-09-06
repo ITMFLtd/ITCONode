@@ -1,0 +1,1410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="rai"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\miniupnp\;CMake Files\miniupnp\miniupnpc\;CMake Files\cmake\;CMake Files\cmake\Modules\;CMake Files\ed25519-donna\;CMake Files\rai\;CMake Files\rai\secure\;CMake Files\rai\lib\;CMake Files\rai\node\;CMake Files\rai\rai_node\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/zach/Dev/ITCO"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/home/zach/Dev/ITCO"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/home/zach/Dev/ITCO"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/zach/Dev/ITCO"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/zach/Dev/ITCO"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="package_source">
+				<Option working_dir="/home/zach/Dev/ITCO"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 package_source"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/home/zach/Dev/ITCO"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="argon2">
+				<Option output="/home/zach/Dev/ITCO/libargon2.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zach/Dev/ITCO"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/zach/Dev/ITCO"/>
+					<Add directory="/home/zach/Dev/ITCO/phc-winner-argon2/include"/>
+					<Add directory="/home/zach/Dev/ITCO/phc-winner-argon2/src"/>
+					<Add directory="/home/zach/Dev/ITCO/blake2"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 argon2"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="argon2/fast">
+				<Option output="/home/zach/Dev/ITCO/libargon2.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zach/Dev/ITCO"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/zach/Dev/ITCO"/>
+					<Add directory="/home/zach/Dev/ITCO/phc-winner-argon2/include"/>
+					<Add directory="/home/zach/Dev/ITCO/phc-winner-argon2/src"/>
+					<Add directory="/home/zach/Dev/ITCO/blake2"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 argon2/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cryptopp">
+				<Option output="/home/zach/Dev/ITCO/libcryptopp.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zach/Dev/ITCO"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/zach/Dev/ITCO"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 cryptopp"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cryptopp/fast">
+				<Option output="/home/zach/Dev/ITCO/libcryptopp.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zach/Dev/ITCO"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/zach/Dev/ITCO"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 cryptopp/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="xxhash">
+				<Option output="/home/zach/Dev/ITCO/libxxhash.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zach/Dev/ITCO"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/zach/Dev/ITCO"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 xxhash"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="xxhash/fast">
+				<Option output="/home/zach/Dev/ITCO/libxxhash.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zach/Dev/ITCO"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/zach/Dev/ITCO"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 xxhash/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lmdb">
+				<Option output="/home/zach/Dev/ITCO/liblmdb.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zach/Dev/ITCO"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/zach/Dev/ITCO"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 lmdb"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lmdb/fast">
+				<Option output="/home/zach/Dev/ITCO/liblmdb.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zach/Dev/ITCO"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/zach/Dev/ITCO"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 lmdb/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/home/zach/Dev/ITCO"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="blake2">
+				<Option output="/home/zach/Dev/ITCO/libblake2.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zach/Dev/ITCO"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__SSE2__"/>
+					<Add directory="/home/zach/Dev/ITCO"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 blake2"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="blake2/fast">
+				<Option output="/home/zach/Dev/ITCO/libblake2.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zach/Dev/ITCO"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__SSE2__"/>
+					<Add directory="/home/zach/Dev/ITCO"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 blake2/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="package">
+				<Option working_dir="/home/zach/Dev/ITCO"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 package"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ed25519">
+				<Option output="/home/zach/Dev/ITCO/ed25519-donna/libed25519.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zach/Dev/ITCO/ed25519-donna"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DED25519_CUSTOMHASH"/>
+					<Add option="-DED25519_CUSTOMRNG"/>
+					<Add directory="/home/zach/Dev/ITCO"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/ed25519-donna/Makefile&quot;  VERBOSE=1 ed25519"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/ed25519-donna/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/ed25519-donna/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/ed25519-donna/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ed25519/fast">
+				<Option output="/home/zach/Dev/ITCO/ed25519-donna/libed25519.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zach/Dev/ITCO/ed25519-donna"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DED25519_CUSTOMHASH"/>
+					<Add option="-DED25519_CUSTOMRNG"/>
+					<Add directory="/home/zach/Dev/ITCO"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/ed25519-donna/Makefile&quot;  VERBOSE=1 ed25519/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/ed25519-donna/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/ed25519-donna/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/ed25519-donna/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testminiwget">
+				<Option output="/home/zach/Dev/ITCO/testminiwget" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zach/Dev/ITCO"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DMINIUPNPC_SET_SOCKET_TIMEOUT"/>
+					<Add option="-D_BSD_SOURCE"/>
+					<Add option="-D_DEFAULT_SOURCE"/>
+					<Add option="-D_XOPEN_SOURCE=600"/>
+					<Add directory="/home/zach/Dev/ITCO"/>
+					<Add directory="/home/zach/Dev/ITCO/miniupnp/miniupnpc"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 testminiwget"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testminiwget/fast">
+				<Option output="/home/zach/Dev/ITCO/testminiwget" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zach/Dev/ITCO"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DMINIUPNPC_SET_SOCKET_TIMEOUT"/>
+					<Add option="-D_BSD_SOURCE"/>
+					<Add option="-D_DEFAULT_SOURCE"/>
+					<Add option="-D_XOPEN_SOURCE=600"/>
+					<Add directory="/home/zach/Dev/ITCO"/>
+					<Add directory="/home/zach/Dev/ITCO/miniupnp/miniupnpc"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 testminiwget/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="upnpc-static">
+				<Option output="/home/zach/Dev/ITCO/upnpc-static" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zach/Dev/ITCO"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DMINIUPNPC_SET_SOCKET_TIMEOUT"/>
+					<Add option="-D_BSD_SOURCE"/>
+					<Add option="-D_DEFAULT_SOURCE"/>
+					<Add option="-D_XOPEN_SOURCE=600"/>
+					<Add directory="/home/zach/Dev/ITCO"/>
+					<Add directory="/home/zach/Dev/ITCO/miniupnp/miniupnpc"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 upnpc-static"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="upnpc-static/fast">
+				<Option output="/home/zach/Dev/ITCO/upnpc-static" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zach/Dev/ITCO"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DMINIUPNPC_SET_SOCKET_TIMEOUT"/>
+					<Add option="-D_BSD_SOURCE"/>
+					<Add option="-D_DEFAULT_SOURCE"/>
+					<Add option="-D_XOPEN_SOURCE=600"/>
+					<Add directory="/home/zach/Dev/ITCO"/>
+					<Add directory="/home/zach/Dev/ITCO/miniupnp/miniupnpc"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 upnpc-static/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libminiupnpc-static">
+				<Option output="/home/zach/Dev/ITCO/miniupnp/miniupnpc/libminiupnpc.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zach/Dev/ITCO/miniupnp/miniupnpc"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DMINIUPNPC_SET_SOCKET_TIMEOUT"/>
+					<Add option="-D_BSD_SOURCE"/>
+					<Add option="-D_DEFAULT_SOURCE"/>
+					<Add option="-D_XOPEN_SOURCE=600"/>
+					<Add directory="/home/zach/Dev/ITCO"/>
+					<Add directory="/home/zach/Dev/ITCO/miniupnp/miniupnpc"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 libminiupnpc-static"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libminiupnpc-static/fast">
+				<Option output="/home/zach/Dev/ITCO/miniupnp/miniupnpc/libminiupnpc.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zach/Dev/ITCO/miniupnp/miniupnpc"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DMINIUPNPC_SET_SOCKET_TIMEOUT"/>
+					<Add option="-D_BSD_SOURCE"/>
+					<Add option="-D_DEFAULT_SOURCE"/>
+					<Add option="-D_XOPEN_SOURCE=600"/>
+					<Add directory="/home/zach/Dev/ITCO"/>
+					<Add directory="/home/zach/Dev/ITCO/miniupnp/miniupnpc"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 libminiupnpc-static/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testminixml">
+				<Option output="/home/zach/Dev/ITCO/testminixml" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zach/Dev/ITCO"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DMINIUPNPC_SET_SOCKET_TIMEOUT"/>
+					<Add option="-D_BSD_SOURCE"/>
+					<Add option="-D_DEFAULT_SOURCE"/>
+					<Add option="-D_XOPEN_SOURCE=600"/>
+					<Add directory="/home/zach/Dev/ITCO"/>
+					<Add directory="/home/zach/Dev/ITCO/miniupnp/miniupnpc"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 testminixml"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testminixml/fast">
+				<Option output="/home/zach/Dev/ITCO/testminixml" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zach/Dev/ITCO"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DMINIUPNPC_SET_SOCKET_TIMEOUT"/>
+					<Add option="-D_BSD_SOURCE"/>
+					<Add option="-D_DEFAULT_SOURCE"/>
+					<Add option="-D_XOPEN_SOURCE=600"/>
+					<Add directory="/home/zach/Dev/ITCO"/>
+					<Add directory="/home/zach/Dev/ITCO/miniupnp/miniupnpc"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 testminixml/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testupnpreplyparse">
+				<Option output="/home/zach/Dev/ITCO/testupnpreplyparse" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zach/Dev/ITCO"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DMINIUPNPC_SET_SOCKET_TIMEOUT"/>
+					<Add option="-D_BSD_SOURCE"/>
+					<Add option="-D_DEFAULT_SOURCE"/>
+					<Add option="-D_XOPEN_SOURCE=600"/>
+					<Add directory="/home/zach/Dev/ITCO"/>
+					<Add directory="/home/zach/Dev/ITCO/miniupnp/miniupnpc"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 testupnpreplyparse"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testupnpreplyparse/fast">
+				<Option output="/home/zach/Dev/ITCO/testupnpreplyparse" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zach/Dev/ITCO"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DMINIUPNPC_SET_SOCKET_TIMEOUT"/>
+					<Add option="-D_BSD_SOURCE"/>
+					<Add option="-D_DEFAULT_SOURCE"/>
+					<Add option="-D_XOPEN_SOURCE=600"/>
+					<Add directory="/home/zach/Dev/ITCO"/>
+					<Add directory="/home/zach/Dev/ITCO/miniupnp/miniupnpc"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 testupnpreplyparse/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="minixmlvalid">
+				<Option output="/home/zach/Dev/ITCO/minixmlvalid" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zach/Dev/ITCO"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DMINIUPNPC_SET_SOCKET_TIMEOUT"/>
+					<Add option="-D_BSD_SOURCE"/>
+					<Add option="-D_DEFAULT_SOURCE"/>
+					<Add option="-D_XOPEN_SOURCE=600"/>
+					<Add directory="/home/zach/Dev/ITCO"/>
+					<Add directory="/home/zach/Dev/ITCO/miniupnp/miniupnpc"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 minixmlvalid"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="minixmlvalid/fast">
+				<Option output="/home/zach/Dev/ITCO/minixmlvalid" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zach/Dev/ITCO"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DMINIUPNPC_SET_SOCKET_TIMEOUT"/>
+					<Add option="-D_BSD_SOURCE"/>
+					<Add option="-D_DEFAULT_SOURCE"/>
+					<Add option="-D_XOPEN_SOURCE=600"/>
+					<Add directory="/home/zach/Dev/ITCO"/>
+					<Add directory="/home/zach/Dev/ITCO/miniupnp/miniupnpc"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 minixmlvalid/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testigddescparse">
+				<Option output="/home/zach/Dev/ITCO/testigddescparse" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zach/Dev/ITCO"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DMINIUPNPC_SET_SOCKET_TIMEOUT"/>
+					<Add option="-D_BSD_SOURCE"/>
+					<Add option="-D_DEFAULT_SOURCE"/>
+					<Add option="-D_XOPEN_SOURCE=600"/>
+					<Add directory="/home/zach/Dev/ITCO"/>
+					<Add directory="/home/zach/Dev/ITCO/miniupnp/miniupnpc"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 testigddescparse"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testigddescparse/fast">
+				<Option output="/home/zach/Dev/ITCO/testigddescparse" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zach/Dev/ITCO"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DMINIUPNPC_SET_SOCKET_TIMEOUT"/>
+					<Add option="-D_BSD_SOURCE"/>
+					<Add option="-D_DEFAULT_SOURCE"/>
+					<Add option="-D_XOPEN_SOURCE=600"/>
+					<Add directory="/home/zach/Dev/ITCO"/>
+					<Add directory="/home/zach/Dev/ITCO/miniupnp/miniupnpc"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 testigddescparse/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="secure">
+				<Option output="/home/zach/Dev/ITCO/rai/secure/libsecure.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zach/Dev/ITCO/rai/secure"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DQT_NO_KEYWORDS"/>
+					<Add option="-DBOOST_ASIO_HAS_STD_ARRAY=1"/>
+					<Add option="-DED25519_CUSTOMHASH"/>
+					<Add option="-DED25519_CUSTOMRNG"/>
+					<Add option="-DACTIVE_NETWORK=rai_live_network"/>
+					<Add directory="/home/zach/Dev/ITCO"/>
+					<Add directory="/home/zach/Dev/[boost]/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/rai/secure/Makefile&quot;  VERBOSE=1 secure"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/rai/secure/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/rai/secure/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/rai/secure/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="secure/fast">
+				<Option output="/home/zach/Dev/ITCO/rai/secure/libsecure.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zach/Dev/ITCO/rai/secure"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DQT_NO_KEYWORDS"/>
+					<Add option="-DBOOST_ASIO_HAS_STD_ARRAY=1"/>
+					<Add option="-DED25519_CUSTOMHASH"/>
+					<Add option="-DED25519_CUSTOMRNG"/>
+					<Add option="-DACTIVE_NETWORK=rai_live_network"/>
+					<Add directory="/home/zach/Dev/ITCO"/>
+					<Add directory="/home/zach/Dev/[boost]/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/rai/secure/Makefile&quot;  VERBOSE=1 secure/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/rai/secure/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/rai/secure/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/rai/secure/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rai_lib">
+				<Option output="/home/zach/Dev/ITCO/rai/lib/librai_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zach/Dev/ITCO/rai/lib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DACTIVE_NETWORK=rai_live_network"/>
+					<Add directory="/home/zach/Dev/ITCO"/>
+					<Add directory="/home/zach/Dev/[boost]/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/rai/lib/Makefile&quot;  VERBOSE=1 rai_lib"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/rai/lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/rai/lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/rai/lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rai_lib/fast">
+				<Option output="/home/zach/Dev/ITCO/rai/lib/librai_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zach/Dev/ITCO/rai/lib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DACTIVE_NETWORK=rai_live_network"/>
+					<Add directory="/home/zach/Dev/ITCO"/>
+					<Add directory="/home/zach/Dev/[boost]/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/rai/lib/Makefile&quot;  VERBOSE=1 rai_lib/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/rai/lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/rai/lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/rai/lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="node">
+				<Option output="/home/zach/Dev/ITCO/rai/node/libnode.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zach/Dev/ITCO/rai/node"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DRAIBLOCKS_VERSION_MAJOR=16"/>
+					<Add option="-DRAIBLOCKS_VERSION_MINOR=0"/>
+					<Add option="-DQT_NO_KEYWORDS"/>
+					<Add option="-DBOOST_ASIO_HAS_STD_ARRAY=1"/>
+					<Add option="-DED25519_CUSTOMHASH"/>
+					<Add option="-DED25519_CUSTOMRNG"/>
+					<Add option="-DACTIVE_NETWORK=rai_live_network"/>
+					<Add directory="/home/zach/Dev/ITCO"/>
+					<Add directory="/home/zach/Dev/ITCO/miniupnp/miniupnpc"/>
+					<Add directory="/home/zach/Dev/ITCO/phc-winner-argon2/include"/>
+					<Add directory="/home/zach/Dev/ITCO/phc-winner-argon2/src"/>
+					<Add directory="/home/zach/Dev/ITCO/blake2"/>
+					<Add directory="/home/zach/Dev/[boost]/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/rai/node/Makefile&quot;  VERBOSE=1 node"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/rai/node/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/rai/node/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/rai/node/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="node/fast">
+				<Option output="/home/zach/Dev/ITCO/rai/node/libnode.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zach/Dev/ITCO/rai/node"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DRAIBLOCKS_VERSION_MAJOR=16"/>
+					<Add option="-DRAIBLOCKS_VERSION_MINOR=0"/>
+					<Add option="-DQT_NO_KEYWORDS"/>
+					<Add option="-DBOOST_ASIO_HAS_STD_ARRAY=1"/>
+					<Add option="-DED25519_CUSTOMHASH"/>
+					<Add option="-DED25519_CUSTOMRNG"/>
+					<Add option="-DACTIVE_NETWORK=rai_live_network"/>
+					<Add directory="/home/zach/Dev/ITCO"/>
+					<Add directory="/home/zach/Dev/ITCO/miniupnp/miniupnpc"/>
+					<Add directory="/home/zach/Dev/ITCO/phc-winner-argon2/include"/>
+					<Add directory="/home/zach/Dev/ITCO/phc-winner-argon2/src"/>
+					<Add directory="/home/zach/Dev/ITCO/blake2"/>
+					<Add directory="/home/zach/Dev/[boost]/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/rai/node/Makefile&quot;  VERBOSE=1 node/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/rai/node/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/rai/node/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/rai/node/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rai_node">
+				<Option output="/home/zach/Dev/ITCO/rai_node" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zach/Dev/ITCO"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DRAIBLOCKS_VERSION_MAJOR=16"/>
+					<Add option="-DRAIBLOCKS_VERSION_MINOR=0"/>
+					<Add option="-DQT_NO_KEYWORDS"/>
+					<Add option="-DBOOST_ASIO_HAS_STD_ARRAY=1"/>
+					<Add option="-DED25519_CUSTOMHASH"/>
+					<Add option="-DED25519_CUSTOMRNG"/>
+					<Add option="-DACTIVE_NETWORK=rai_live_network"/>
+					<Add directory="/home/zach/Dev/ITCO"/>
+					<Add directory="/home/zach/Dev/ITCO/miniupnp/miniupnpc"/>
+					<Add directory="/home/zach/Dev/ITCO/phc-winner-argon2/include"/>
+					<Add directory="/home/zach/Dev/ITCO/phc-winner-argon2/src"/>
+					<Add directory="/home/zach/Dev/ITCO/blake2"/>
+					<Add directory="/home/zach/Dev/[boost]/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/rai/rai_node/Makefile&quot;  VERBOSE=1 rai_node"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/rai/rai_node/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/rai/rai_node/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/rai/rai_node/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rai_node/fast">
+				<Option output="/home/zach/Dev/ITCO/rai_node" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zach/Dev/ITCO"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DRAIBLOCKS_VERSION_MAJOR=16"/>
+					<Add option="-DRAIBLOCKS_VERSION_MINOR=0"/>
+					<Add option="-DQT_NO_KEYWORDS"/>
+					<Add option="-DBOOST_ASIO_HAS_STD_ARRAY=1"/>
+					<Add option="-DED25519_CUSTOMHASH"/>
+					<Add option="-DED25519_CUSTOMRNG"/>
+					<Add option="-DACTIVE_NETWORK=rai_live_network"/>
+					<Add directory="/home/zach/Dev/ITCO"/>
+					<Add directory="/home/zach/Dev/ITCO/miniupnp/miniupnpc"/>
+					<Add directory="/home/zach/Dev/ITCO/phc-winner-argon2/include"/>
+					<Add directory="/home/zach/Dev/ITCO/phc-winner-argon2/src"/>
+					<Add directory="/home/zach/Dev/ITCO/blake2"/>
+					<Add directory="/home/zach/Dev/[boost]/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/rai/rai_node/Makefile&quot;  VERBOSE=1 rai_node/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/rai/rai_node/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/rai/rai_node/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/zach/Dev/ITCO/rai/rai_node/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/zach/Dev/ITCO/blake2/blake2-config.h">
+			<Option target="blake2"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/blake2/blake2-impl.h">
+			<Option target="blake2"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/blake2/blake2.h">
+			<Option target="blake2"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/blake2/blake2b.c">
+			<Option target="blake2"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/bootstrap_weights.cpp">
+			<Option target="secure"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/algparam.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/algparam.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/asn.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/asn.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/basecode.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/basecode.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/cpu.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/cpu.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/cryptlib.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/cryptlib.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/default.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/default.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/des.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/des.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/dessp.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/dll.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/dll.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/ec2n.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/ec2n.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/ecp.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/ecp.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/filters.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/filters.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/fips140.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/fips140.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/gcm.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/gcm.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/gf2n.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/gf2n.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/gfpcrypt.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/gfpcrypt.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/hex.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/hex.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/hmac.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/hmac.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/hrtimer.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/hrtimer.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/integer.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/integer.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/iterhash.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/iterhash.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/misc.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/misc.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/modes.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/modes.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/mqueue.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/mqueue.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/nbtheory.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/nbtheory.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/oaep.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/oaep.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/osrng.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/osrng.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/pubkey.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/pubkey.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/queue.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/queue.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/randpool.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/randpool.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/rdtables.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/rijndael.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/rijndael.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/rng.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/rng.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/sha.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/sha.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/simple.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/simple.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/winpipes.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cryptopp/winpipes.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/ed25519-donna/ed25519-donna-portable.h">
+			<Option target="ed25519"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/ed25519-donna/ed25519-hash-custom.h">
+			<Option target="ed25519"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/ed25519-donna/ed25519-randombytes-custom.h">
+			<Option target="ed25519"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/ed25519-donna/ed25519.c">
+			<Option target="ed25519"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/ed25519-donna/ed25519.h">
+			<Option target="ed25519"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/lmdb/libraries/liblmdb/lmdb.h">
+			<Option target="lmdb"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/lmdb/libraries/liblmdb/mdb.c">
+			<Option target="lmdb"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/lmdb/libraries/liblmdb/midl.c">
+			<Option target="lmdb"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/lmdb/libraries/liblmdb/midl.h">
+			<Option target="lmdb"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/miniupnp/miniupnpc/connecthostport.c">
+			<Option target="testminiwget"/>
+			<Option target="libminiupnpc-static"/>
+			<Option target="testigddescparse"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/miniupnp/miniupnpc/connecthostport.h">
+			<Option target="testminiwget"/>
+			<Option target="libminiupnpc-static"/>
+			<Option target="testigddescparse"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/miniupnp/miniupnpc/igd_desc_parse.c">
+			<Option target="testminiwget"/>
+			<Option target="libminiupnpc-static"/>
+			<Option target="testminixml"/>
+			<Option target="testigddescparse"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/miniupnp/miniupnpc/igd_desc_parse.h">
+			<Option target="testminiwget"/>
+			<Option target="libminiupnpc-static"/>
+			<Option target="testminixml"/>
+			<Option target="testigddescparse"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/miniupnp/miniupnpc/minisoap.c">
+			<Option target="testminiwget"/>
+			<Option target="libminiupnpc-static"/>
+			<Option target="testigddescparse"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/miniupnp/miniupnpc/minisoap.h">
+			<Option target="testminiwget"/>
+			<Option target="libminiupnpc-static"/>
+			<Option target="testigddescparse"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/miniupnp/miniupnpc/minissdpc.c">
+			<Option target="testminiwget"/>
+			<Option target="libminiupnpc-static"/>
+			<Option target="testigddescparse"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/miniupnp/miniupnpc/minissdpc.h">
+			<Option target="testminiwget"/>
+			<Option target="libminiupnpc-static"/>
+			<Option target="testigddescparse"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/miniupnp/miniupnpc/miniupnpc.c">
+			<Option target="testminiwget"/>
+			<Option target="libminiupnpc-static"/>
+			<Option target="testigddescparse"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/miniupnp/miniupnpc/miniupnpc.h">
+			<Option target="testminiwget"/>
+			<Option target="libminiupnpc-static"/>
+			<Option target="testigddescparse"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/miniupnp/miniupnpc/miniwget.c">
+			<Option target="testminiwget"/>
+			<Option target="libminiupnpc-static"/>
+			<Option target="testigddescparse"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/miniupnp/miniupnpc/miniwget.h">
+			<Option target="testminiwget"/>
+			<Option target="libminiupnpc-static"/>
+			<Option target="testigddescparse"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/miniupnp/miniupnpc/minixml.c">
+			<Option target="testminiwget"/>
+			<Option target="libminiupnpc-static"/>
+			<Option target="testminixml"/>
+			<Option target="testupnpreplyparse"/>
+			<Option target="minixmlvalid"/>
+			<Option target="testigddescparse"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/miniupnp/miniupnpc/minixml.h">
+			<Option target="testminiwget"/>
+			<Option target="libminiupnpc-static"/>
+			<Option target="testminixml"/>
+			<Option target="testupnpreplyparse"/>
+			<Option target="minixmlvalid"/>
+			<Option target="testigddescparse"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/miniupnp/miniupnpc/minixmlvalid.c">
+			<Option target="minixmlvalid"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/miniupnp/miniupnpc/portlistingparse.c">
+			<Option target="testminiwget"/>
+			<Option target="libminiupnpc-static"/>
+			<Option target="testigddescparse"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/miniupnp/miniupnpc/portlistingparse.h">
+			<Option target="testminiwget"/>
+			<Option target="libminiupnpc-static"/>
+			<Option target="testigddescparse"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/miniupnp/miniupnpc/receivedata.c">
+			<Option target="testminiwget"/>
+			<Option target="libminiupnpc-static"/>
+			<Option target="testigddescparse"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/miniupnp/miniupnpc/receivedata.h">
+			<Option target="testminiwget"/>
+			<Option target="libminiupnpc-static"/>
+			<Option target="testigddescparse"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/miniupnp/miniupnpc/testigddescparse.c">
+			<Option target="testigddescparse"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/miniupnp/miniupnpc/testminiwget.c">
+			<Option target="testminiwget"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/miniupnp/miniupnpc/testminixml.c">
+			<Option target="testminixml"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/miniupnp/miniupnpc/testupnpreplyparse.c">
+			<Option target="testupnpreplyparse"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/miniupnp/miniupnpc/upnpc.c">
+			<Option target="upnpc-static"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/miniupnp/miniupnpc/upnpcommands.c">
+			<Option target="testminiwget"/>
+			<Option target="libminiupnpc-static"/>
+			<Option target="testigddescparse"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/miniupnp/miniupnpc/upnpcommands.h">
+			<Option target="testminiwget"/>
+			<Option target="libminiupnpc-static"/>
+			<Option target="testigddescparse"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/miniupnp/miniupnpc/upnpdev.c">
+			<Option target="libminiupnpc-static"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/miniupnp/miniupnpc/upnpdev.h">
+			<Option target="libminiupnpc-static"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/miniupnp/miniupnpc/upnperrors.c">
+			<Option target="libminiupnpc-static"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/miniupnp/miniupnpc/upnperrors.h">
+			<Option target="libminiupnpc-static"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/miniupnp/miniupnpc/upnpreplyparse.c">
+			<Option target="testminiwget"/>
+			<Option target="libminiupnpc-static"/>
+			<Option target="testupnpreplyparse"/>
+			<Option target="testigddescparse"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/miniupnp/miniupnpc/upnpreplyparse.h">
+			<Option target="testminiwget"/>
+			<Option target="libminiupnpc-static"/>
+			<Option target="testupnpreplyparse"/>
+			<Option target="testigddescparse"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/phc-winner-argon2/include/argon2.h">
+			<Option target="argon2"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/phc-winner-argon2/src/argon2.c">
+			<Option target="argon2"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/phc-winner-argon2/src/core.c">
+			<Option target="argon2"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/phc-winner-argon2/src/core.h">
+			<Option target="argon2"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/phc-winner-argon2/src/encoding.c">
+			<Option target="argon2"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/phc-winner-argon2/src/encoding.h">
+			<Option target="argon2"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/phc-winner-argon2/src/opt.c">
+			<Option target="argon2"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/phc-winner-argon2/src/thread.c">
+			<Option target="argon2"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/phc-winner-argon2/src/thread.h">
+			<Option target="argon2"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/lib/blocks.cpp">
+			<Option target="rai_lib"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/lib/blocks.hpp">
+			<Option target="rai_lib"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/lib/config.hpp">
+			<Option target="rai_lib"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/lib/errors.cpp">
+			<Option target="rai_lib"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/lib/errors.hpp">
+			<Option target="rai_lib"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/lib/expected.hpp">
+			<Option target="rai_lib"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/lib/interface.cpp">
+			<Option target="rai_lib"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/lib/interface.h">
+			<Option target="rai_lib"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/lib/numbers.cpp">
+			<Option target="rai_lib"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/lib/numbers.hpp">
+			<Option target="rai_lib"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/lib/plat/linux/priority.cpp">
+			<Option target="rai_lib"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/lib/utility.cpp">
+			<Option target="rai_lib"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/lib/utility.hpp">
+			<Option target="rai_lib"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/lib/work.cpp">
+			<Option target="rai_lib"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/lib/work.hpp">
+			<Option target="rai_lib"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/node/bootstrap.cpp">
+			<Option target="node"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/node/bootstrap.hpp">
+			<Option target="node"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/node/cli.cpp">
+			<Option target="node"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/node/cli.hpp">
+			<Option target="node"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/node/common.cpp">
+			<Option target="node"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/node/common.hpp">
+			<Option target="node"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/node/lmdb.cpp">
+			<Option target="node"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/node/lmdb.hpp">
+			<Option target="node"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/node/node.cpp">
+			<Option target="node"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/node/node.hpp">
+			<Option target="node"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/node/openclwork.cpp">
+			<Option target="node"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/node/openclwork.hpp">
+			<Option target="node"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/node/plat/posix/openclapi.cpp">
+			<Option target="node"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/node/rpc.cpp">
+			<Option target="node"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/node/rpc.hpp">
+			<Option target="node"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/node/stats.cpp">
+			<Option target="node"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/node/stats.hpp">
+			<Option target="node"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/node/testing.cpp">
+			<Option target="node"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/node/testing.hpp">
+			<Option target="node"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/node/wallet.cpp">
+			<Option target="node"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/node/wallet.hpp">
+			<Option target="node"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/node/working.hpp">
+			<Option target="node"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/node/xorshift.hpp">
+			<Option target="node"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/rai_node/daemon.cpp">
+			<Option target="rai_node"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/rai_node/daemon.hpp">
+			<Option target="rai_node"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/rai_node/entry.cpp">
+			<Option target="rai_node"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/secure/blockstore.cpp">
+			<Option target="secure"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/secure/blockstore.hpp">
+			<Option target="secure"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/secure/common.cpp">
+			<Option target="secure"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/secure/common.hpp">
+			<Option target="secure"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/secure/ledger.cpp">
+			<Option target="secure"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/secure/ledger.hpp">
+			<Option target="secure"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/secure/plat/posix/working.cpp">
+			<Option target="secure"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/secure/utility.cpp">
+			<Option target="secure"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/secure/utility.hpp">
+			<Option target="secure"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/secure/versioning.cpp">
+			<Option target="secure"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/secure/versioning.hpp">
+			<Option target="secure"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/xxhash/xxhash.c">
+			<Option target="xxhash"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/xxhash/xxhash.h">
+			<Option target="xxhash"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/miniupnp/miniupnpc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\miniupnp\miniupnpc\"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/miniupnp/miniupnpc/miniupnpcstrings.h.cmake">
+			<Option virtualFolder="CMake Files\miniupnp\miniupnpc\"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/cmake/Modules/FindBoost.cmake">
+			<Option virtualFolder="CMake Files\cmake\Modules\"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/ed25519-donna/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\ed25519-donna\"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/secure/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\rai\secure\"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/lib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\rai\lib\"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/node/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\rai\node\"/>
+		</Unit>
+		<Unit filename="/home/zach/Dev/ITCO/rai/rai_node/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\rai\rai_node\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

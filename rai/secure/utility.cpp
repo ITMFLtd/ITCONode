@@ -17,7 +17,7 @@ boost::filesystem::path rai::working_path ()
 			result /= "RaiBlocksBeta";
 			break;
 		case rai::rai_networks::rai_live_network:
-			result /= "RaiBlocks";
+			result /= "ITCO";
 			break;
 	}
 	return result;
