@@ -682,7 +682,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DRAIBLOCKS_VERSION_MAJOR=16"/>
+					<Add option="-DRAIBLOCKS_VERSION_MAJOR=17"/>
 					<Add option="-DRAIBLOCKS_VERSION_MINOR=0"/>
 					<Add option="-DQT_NO_KEYWORDS"/>
 					<Add option="-DBOOST_ASIO_HAS_STD_ARRAY=1"/>
@@ -710,7 +710,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DRAIBLOCKS_VERSION_MAJOR=16"/>
+					<Add option="-DRAIBLOCKS_VERSION_MAJOR=17"/>
 					<Add option="-DRAIBLOCKS_VERSION_MINOR=0"/>
 					<Add option="-DQT_NO_KEYWORDS"/>
 					<Add option="-DBOOST_ASIO_HAS_STD_ARRAY=1"/>
@@ -738,7 +738,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DRAIBLOCKS_VERSION_MAJOR=16"/>
+					<Add option="-DRAIBLOCKS_VERSION_MAJOR=17"/>
 					<Add option="-DRAIBLOCKS_VERSION_MINOR=0"/>
 					<Add option="-DQT_NO_KEYWORDS"/>
 					<Add option="-DBOOST_ASIO_HAS_STD_ARRAY=1"/>
@@ -766,7 +766,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DRAIBLOCKS_VERSION_MAJOR=16"/>
+					<Add option="-DRAIBLOCKS_VERSION_MAJOR=17"/>
 					<Add option="-DRAIBLOCKS_VERSION_MINOR=0"/>
 					<Add option="-DQT_NO_KEYWORDS"/>
 					<Add option="-DBOOST_ASIO_HAS_STD_ARRAY=1"/>

@@ -9,6 +9,7 @@
 #include <boost/lexical_cast.hpp>
 #include <boost/program_options.hpp>
 
+
 int main (int argc, char * const * argv)
 {
 	rai::set_umask ();
