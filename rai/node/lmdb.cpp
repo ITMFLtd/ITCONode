@@ -1,5 +1,7 @@
-#include <rai/node/common.hpp>
 #include <rai/node/lmdb.hpp>
+
+#include <rai/lib/utility.hpp>
+#include <rai/node/common.hpp>
 #include <rai/secure/versioning.hpp>
 
 #include <boost/polymorphic_cast.hpp>
@@ -12,6 +14,7 @@ rai::mdb_env::mdb_env (bool & error_a, boost::filesystem::path const & path_a, i
 	if (path_a.has_parent_path ())
 	{
 		boost::filesystem::create_directories (path_a.parent_path (), error);
+		boost::filesystem::permissions (path_a.parent_path (), boost::filesystem::owner_all);
 		if (!error)
 		{
 			auto status1 (mdb_env_create (&environment));
@@ -59,6 +62,7 @@ rai::transaction rai::mdb_env::tx_begin (bool write_a) const
 MDB_txn * rai::mdb_env::tx (rai::transaction const & transaction_a) const
 {
 	auto result (boost::polymorphic_downcast<rai::mdb_txn *> (transaction_a.impl.get ()));
+	release_assert (mdb_txn_env (result->handle) == environment);
 	return *result;
 }
 
@@ -623,8 +627,20 @@ rai::mdb_iterator<T, U> & rai::mdb_merge_iterator<T, U>::least_iterator () const
 	else
 	{
 		auto key_cmp (mdb_cmp (mdb_cursor_txn (impl1->cursor), mdb_cursor_dbi (impl1->cursor), impl1->current.first, impl2->current.first));
-		auto val_cmp (mdb_cmp (mdb_cursor_txn (impl1->cursor), mdb_cursor_dbi (impl1->cursor), impl1->current.second, impl2->current.second));
-		result = key_cmp < 0 ? impl1.get () : val_cmp < 0 ? impl1.get () : impl2.get ();
+
+		if (key_cmp < 0)
+		{
+			result = impl1.get ();
+		}
+		else if (key_cmp > 0)
+		{
+			result = impl2.get ();
+		}
+		else
+		{
+			auto val_cmp (mdb_cmp (mdb_cursor_txn (impl1->cursor), mdb_cursor_dbi (impl1->cursor), impl1->current.second, impl2->current.second));
+			result = val_cmp < 0 ? impl1.get () : impl2.get ();
+		}
 	}
 	return *result;
 }

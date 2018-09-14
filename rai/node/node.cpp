@@ -1860,7 +1860,7 @@ stats (config.stat_config)
 		BOOST_LOG (log) << "Node ID: " << node_id.pub.to_account ();
 	}
 	peers.online_weight_minimum = config.online_weight_minimum.number ();
-	if (rai::rai_network == rai::rai_networks::rai_live_network)
+	if (rai::rai_network == rai::rai_networks::rai_live_network || rai::rai_network == rai::rai_networks::rai_beta_network)
 	{
 		extern const char rai_bootstrap_weights[];
 		extern const size_t rai_bootstrap_weights_size;
@@ -2430,6 +2430,7 @@ void rai::node::backup_wallet ()
 	{
 		auto backup_path (application_path / "backup");
 		boost::filesystem::create_directories (backup_path);
+		boost::filesystem::permissions (backup_path, boost::filesystem::owner_all);
 		i->second->store.write_backup (transaction, backup_path / (i->first.to_string () + ".json"));
 	}
 	auto this_l (shared ());
@@ -4103,6 +4104,7 @@ alarm (*service),
 work (1, nullptr)
 {
 	boost::filesystem::create_directories (path);
+	boost::filesystem::permissions (path, boost::filesystem::owner_all);
 	logging.max_size = std::numeric_limits<std::uintmax_t>::max ();
 	logging.init (path);
 	node = std::make_shared<rai::node> (init, *service, 24000, path, alarm, logging, work);
