@@ -51,7 +51,8 @@ void rai::add_node_options (boost::program_options::options_description & descri
 	("file", boost::program_options::value<std::string> (), "Defines <file> for other commands")
 	("key", boost::program_options::value<std::string> (), "Defines the <key> for other commands, hex")
 	("password", boost::program_options::value<std::string> (), "Defines <password> for other commands")
-	("wallet", boost::program_options::value<std::string> (), "Defines <wallet> for other commands");
+	("wallet", boost::program_options::value<std::string> (), "Defines <wallet> for other commands")
+	("force", boost::program_options::value<bool>(), "Bool to force command if allowed");
 	// clang-format on
 }
 
@@ -177,6 +178,10 @@ std::error_code rai::handle_node_options (boost::program_options::variables_map 
 				boost::filesystem::rename (vacuum_path, source_path);
 				std::cout << "Vacuum completed" << std::endl;
 			}
+			else
+			{
+				std::cerr << "Vacuum failed (copy_with_compaction returned false)" << std::endl;
+			}
 		}
 		catch (const boost::filesystem::filesystem_error & ex)
 		{
@@ -184,7 +189,7 @@ std::error_code rai::handle_node_options (boost::program_options::variables_map 
 		}
 		catch (...)
 		{
-			std::cerr << "Vacuum failed" << std::endl;
+			std::cerr << "Vacuum failed (unknown reason)" << std::endl;
 		}
 	}
 	else if (vm.count ("snapshot"))
@@ -223,6 +228,10 @@ std::error_code rai::handle_node_options (boost::program_options::variables_map 
 			{
 				std::cout << "Snapshot completed, This can be found at " << snapshot_path << std::endl;
 			}
+			else
+			{
+				std::cerr << "Snapshot Failed (copy_with_compaction returned false)" << std::endl;
+			}
 		}
 		catch (const boost::filesystem::filesystem_error & ex)
 		{
@@ -230,7 +239,7 @@ std::error_code rai::handle_node_options (boost::program_options::variables_map 
 		}
 		catch (...)
 		{
-			std::cerr << "Snapshot Failed" << std::endl;
+			std::cerr << "Snapshot Failed (unknown reason)" << std::endl;
 		}
 	}
 	else if (vm.count ("unchecked_clear"))
@@ -517,6 +526,7 @@ std::error_code rai::handle_node_options (boost::program_options::variables_map 
 	{
 		if (vm.count ("file") == 1)
 		{
+			bool forced (false);
 			std::string filename (vm["file"].as<std::string> ());
 			std::ifstream stream;
 			stream.open (filename.c_str ());
@@ -528,6 +538,10 @@ std::error_code rai::handle_node_options (boost::program_options::variables_map 
 				if (vm.count ("password") == 1)
 				{
 					password = vm["password"].as<std::string> ();
+				}
+				if (vm.count ("force") == 1)
+				{
+					forced = vm["force"].as<bool> ();
 				}
 				if (vm.count ("wallet") == 1)
 				{
@@ -546,8 +560,21 @@ std::error_code rai::handle_node_options (boost::program_options::variables_map 
 						}
 						else
 						{
-							std::cerr << "Wallet doesn't exist\n";
-							ec = rai::error_cli::invalid_arguments;
+							if (!forced)
+							{
+								std::cerr << "Wallet doesn't exist\n";
+								ec = rai::error_cli::invalid_arguments;
+							}
+							else
+							{
+								node.node->wallets.create (wallet_id);
+								auto existing (node.node->wallets.items.find (wallet_id));
+								if (existing->second->import (contents.str (), password))
+								{
+									std::cerr << "Unable to import wallet\n";
+									ec = rai::error_cli::invalid_arguments;
+								}
+							}
 						}
 					}
 					else

@@ -80,71 +80,10 @@ public:
 	operator MDB_val const & () const;
 	MDB_val value;
 	std::shared_ptr<std::vector<uint8_t>> buffer;
-	rai::epoch epoch;
+	rai::epoch epoch{ rai::epoch::unspecified };
 };
 class block_store;
-/**
- * Determine the balance as of this block
- */
-class balance_visitor : public rai::block_visitor
-{
-public:
-	balance_visitor (rai::transaction const &, rai::block_store &);
-	virtual ~balance_visitor () = default;
-	void compute (rai::block_hash const &);
-	void send_block (rai::send_block const &) override;
-	void receive_block (rai::receive_block const &) override;
-	void open_block (rai::open_block const &) override;
-	void change_block (rai::change_block const &) override;
-	void state_block (rai::state_block const &) override;
-	rai::transaction const & transaction;
-	rai::block_store & store;
-	rai::block_hash current_balance;
-	rai::block_hash current_amount;
-	rai::uint128_t balance;
-};
 
-/**
- * Determine the amount delta resultant from this block
- */
-class amount_visitor : public rai::block_visitor
-{
-public:
-	amount_visitor (rai::transaction const &, rai::block_store &);
-	virtual ~amount_visitor () = default;
-	void compute (rai::block_hash const &);
-	void send_block (rai::send_block const &) override;
-	void receive_block (rai::receive_block const &) override;
-	void open_block (rai::open_block const &) override;
-	void change_block (rai::change_block const &) override;
-	void state_block (rai::state_block const &) override;
-	void from_send (rai::block_hash const &);
-	rai::transaction const & transaction;
-	rai::block_store & store;
-	rai::block_hash current_amount;
-	rai::block_hash current_balance;
-	rai::uint128_t amount;
-};
-
-/**
- * Determine the representative for this block
- */
-class representative_visitor : public rai::block_visitor
-{
-public:
-	representative_visitor (rai::transaction const & transaction_a, rai::block_store & store_a);
-	virtual ~representative_visitor () = default;
-	void compute (rai::block_hash const & hash_a);
-	void send_block (rai::send_block const & block_a) override;
-	void receive_block (rai::receive_block const & block_a) override;
-	void open_block (rai::open_block const & block_a) override;
-	void change_block (rai::change_block const & block_a) override;
-	void state_block (rai::state_block const & block_a) override;
-	rai::transaction const & transaction;
-	rai::block_store & store;
-	rai::block_hash current;
-	rai::block_hash result;
-};
 template <typename T, typename U>
 class mdb_iterator : public store_iterator_impl<T, U>
 {
@@ -216,8 +155,8 @@ public:
 	void block_put (rai::transaction const &, rai::block_hash const &, rai::block const &, rai::block_hash const & = rai::block_hash (0), rai::epoch version = rai::epoch::epoch_0) override;
 	rai::block_hash block_successor (rai::transaction const &, rai::block_hash const &) override;
 	void block_successor_clear (rai::transaction const &, rai::block_hash const &) override;
-	std::unique_ptr<rai::block> block_get (rai::transaction const &, rai::block_hash const &) override;
-	std::unique_ptr<rai::block> block_random (rai::transaction const &) override;
+	std::shared_ptr<rai::block> block_get (rai::transaction const &, rai::block_hash const &) override;
+	std::shared_ptr<rai::block> block_random (rai::transaction const &) override;
 	void block_del (rai::transaction const &, rai::block_hash const &) override;
 	bool block_exists (rai::transaction const &, rai::block_hash const &) override;
 	rai::block_counts block_count (rai::transaction const &) override;
@@ -298,7 +237,8 @@ public:
 	rai::store_iterator<rai::account, std::shared_ptr<rai::vote>> vote_begin (rai::transaction const &) override;
 	rai::store_iterator<rai::account, std::shared_ptr<rai::vote>> vote_end () override;
 	std::mutex cache_mutex;
-	std::unordered_map<rai::account, std::shared_ptr<rai::vote>> vote_cache;
+	std::unordered_map<rai::account, std::shared_ptr<rai::vote>> vote_cache_l1;
+	std::unordered_map<rai::account, std::shared_ptr<rai::vote>> vote_cache_l2;
 
 	void version_put (rai::transaction const &, int) override;
 	int version_get (rai::transaction const &) override;
@@ -428,7 +368,7 @@ public:
 private:
 	MDB_dbi block_database (rai::block_type, rai::epoch);
 	template <typename T>
-	std::unique_ptr<rai::block> block_random (rai::transaction const &, MDB_dbi);
+	std::shared_ptr<rai::block> block_random (rai::transaction const &, MDB_dbi);
 	MDB_val block_raw_get (rai::transaction const &, rai::block_hash const &, rai::block_type &);
 	void block_raw_put (rai::transaction const &, MDB_dbi, rai::block_hash const &, MDB_val);
 	void clear (MDB_dbi);
