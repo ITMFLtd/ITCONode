@@ -17,7 +17,7 @@ namespace
 char const * test_private_key_data = "34F0A37AAD20F4A260F0A5B3CB3D7FB50673212263E58A380BC10474BB039CE4";
 char const * test_public_key_data = "B0311EA55708D6A53C75CDBF88300259C6D018522FE3D4D0A242E431F9E8B6D0";
 char const * beta_public_key_data = "A59A47CC4F593E75AE9AD653FDA9358E2F7898D9ACC8C60E80D0495CE20FBA9F";
-char const * live_public_key_data = "FEB8E6777F01EB99989A28B2DF500A954EC2712B8859CF2DB503A75603C756E7";
+char const * live_public_key_data = "237044F8CAA031262648C08252ACF0523A85E7A766172B5709C62017DA5F6835";
 char const * test_genesis_data = R"%%%({
 	"type": "open",
     "source": "9C57C1F205FFB7217996EF9FD11D47079DDB7B07F82A9C22F1714F4F8734063A",
@@ -37,12 +37,12 @@ char const * beta_genesis_data = R"%%%({
 })%%%";
 
 char const * live_genesis_data = R"%%%({
-	"type": "open",
-    "source": "FEB8E6777F01EB99989A28B2DF500A954EC2712B8859CF2DB503A75603C756E7",
-    "representative": "itco_3zorwsuqy1hdm8ebnc7kuxa1o7cgrbrkq44sswpuc1x9cr3wgoq9ytmzib1x",
-    "account": "itco_3zorwsuqy1hdm8ebnc7kuxa1o7cgrbrkq44sswpuc1x9cr3wgoq9ytmzib1x",
-    "work": "0ce698b386693e38",
-    "signature": "61D0ED1FEC42740E0958340B6617BC03849A6D89C99ADB2810F045A76D295DD048AC3833F57553A97AE2B2DCFB8B996171E8064FCA5867716693FB8576DA2107"
+    "type": "open",
+    "source": "237044F8CAA031262648C08252ACF0523A85E7A766172B5709C62017DA5F6835",
+    "representative": "itco_1auiamweoa3j6rm6ji64ccph1njtiqmtgsiq7fdimjj14zf7yt3ornkmiwog",
+    "account": "itco_1auiamweoa3j6rm6ji64ccph1njtiqmtgsiq7fdimjj14zf7yt3ornkmiwog",
+    "work": "0ce63df3781d5acc",
+    "signature": "889E03CDF00B2462C1C7C73B3A473F1ACABACCCA7BA152EC5F1D2991EDE3C6157BD2FD0F3AA4F3E3DE1249395694E3A1162FC766A9A69DFEA9E302A8C1FA4F05"
 })%%%";
 
 class ledger_constants

@@ -164,7 +164,7 @@ public:
 	bool deserialize (rai::stream &);
 	rai::block_type block_type () const;
 	void block_type_set (rai::block_type);
-	static std::array<uint8_t, 2> constexpr magic_number = rai::rai_network == rai::rai_networks::rai_test_network ? std::array<uint8_t, 2>{ { 'R', 'A' } } : rai::rai_network == rai::rai_networks::rai_beta_network ? std::array<uint8_t, 2>{ { 'R', 'B' } } : std::array<uint8_t, 2>{ { 'R', 'C' } };
+	static std::array<uint8_t, 2> constexpr magic_number = rai::rai_network == rai::rai_networks::rai_test_network ? std::array<uint8_t, 2>{ { 'I', 'A' } } : rai::rai_network == rai::rai_networks::rai_beta_network ? std::array<uint8_t, 2>{ { 'I', 'B' } } : std::array<uint8_t, 2>{ { 'I', 'C' } };
 	uint8_t version_max;
 	uint8_t version_using;
 	uint8_t version_min;
@@ -175,7 +175,7 @@ public:
 	static std::bitset<16> constexpr block_type_mask = std::bitset<16> (0x0f00);
 	inline bool valid_magic () const
 	{
-		return magic_number[0] == 'R' && magic_number[1] >= 'A' && magic_number[1] <= 'C';
+		return magic_number[0] == 'I' && magic_number[1] >= 'A' && magic_number[1] <= 'C';
 	}
 	inline bool valid_network () const
 	{
