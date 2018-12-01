@@ -2659,7 +2659,7 @@ void rai::online_reps::vote (std::shared_ptr<rai::vote> const & vote_a)
 		if (online_stake_total < old_stake)
 		{
 			// overflow
-			online_stake_total = std::numeric_limits<rai::uint128_t>::max ();
+			online_stake_total = genesis_amount;
 		}
 		reps.insert (info);
 	}

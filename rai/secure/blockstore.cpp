@@ -192,7 +192,7 @@ rai::uint128_t rai::summation_visitor::compute_internal (rai::summation_visitor:
 					{
 						if (current->amount_hash == rai::genesis_account)
 						{
-							sum_set (std::numeric_limits<rai::uint128_t>::max ());
+							sum_set (genesis_amount);
 							current->amount_hash = 0;
 						}
 						else
