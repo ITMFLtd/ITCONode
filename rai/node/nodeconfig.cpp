@@ -12,8 +12,8 @@ rai::node_config::node_config (uint16_t peering_port_a, rai::logging const & log
 peering_port (peering_port_a),
 logging (logging_a),
 bootstrap_fraction_numerator (1),
-receive_minimum (rai::xrb_ratio),
-online_weight_minimum (60000 * rai::Gxrb_ratio),
+receive_minimum (1),
+online_weight_minimum (20000000000),
 online_weight_quorum (50),
 password_fanout (1024),
 io_threads (std::max<unsigned> (4, boost::thread::hardware_concurrency ())),
@@ -41,7 +41,7 @@ disable_lazy_bootstrap (false)
 			break;
 		case rai::rai_networks::rai_live_network:
 			preconfigured_peers.push_back ("198.143.136.135");
-			preconfigured_representatives.push_back (rai::account ("A30E0A32ED41C8607AA9212843392E853FCBCB4E7CB194E35C94F07F91DE59EF"));
+			preconfigured_representatives.push_back (rai::account ("237044F8CAA031262648C08252ACF0523A85E7A766172B5709C62017DA5F6835"));
 			break;
 		default:
 			assert (false);
