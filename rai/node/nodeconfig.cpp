@@ -40,7 +40,7 @@ disable_lazy_bootstrap (false)
 			// Not running
 			break;
 		case rai::rai_networks::rai_live_network:
-			preconfigured_peers.push_back ("198.143.136.135");
+			preconfigured_peets.push_back ("167.99.14.44")
 			preconfigured_representatives.push_back (rai::account ("237044F8CAA031262648C08252ACF0523A85E7A766172B5709C62017DA5F6835"));
 			break;
 		default:
